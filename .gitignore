@@ -1,0 +1,65 @@
+# Python
+__pycache__
+__pypackages__
+.pytest_cache
+*.py[cod]
+.clirope
+*.egg-info
+venv
+
+# IPython
+profile_default/
+ipython_config.py
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# misc temporary files
+*~
+*.out
+*.log
+*.bak
+*.pid
+*.rdb
+*.old
+
+# misc output files
+*.pdf
+*.gz
+build
+dist
+*.cif
+*.svg
+# but allow svgs in img
+!img/*.svg
+
+# VIM
+*.sw*
+*.vim
+*.obsession*
+
+# PyCharm
+.idea/
+
+# Spyder
+.spyderproject
+.spyproject
+
+# Mac OS and Windows
+.DS_Store
+Thumbs.db
+
+# Secrets / keys
+*.pem
+*.secret
+
+# Environment variable files
+# (exclude *.env but INCLUDE *.expample.env)
+*.env
+!*.example.env
+
