@@ -34,7 +34,7 @@ class Smiley(rai.Compo):
         eye_l = rai.Circle(eye_size).proxy().map('eyes')
         eye_r = eye_l.copy()
 
-        smile = rai.AnSec(
+        smile = rai.AnSec.from_auto(
             thetamid=radians(-90),
             dtheta=radians(abs(happiness) * 10),
             r1=40,
