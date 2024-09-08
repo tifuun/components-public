@@ -55,10 +55,11 @@ class AlignMarker(rai.Compo):
             rect_width,
             rect_length,
             gap_width
-            ).proxy()
+            ).proxy().map('left')
         self.subcompos.right = (
             self.subcompos.left
             .proxy()
+            .map('right')
             .scale(abberation)
             .snap_right(
                 self.subcompos.left
