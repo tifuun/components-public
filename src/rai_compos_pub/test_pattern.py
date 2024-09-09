@@ -1,10 +1,10 @@
 """
-align_marker.py: home to AlignMarker component
+test_pattern.py: home to TestPattern component
 """
 
 import raimad as rai
 
-class HalfAlignMarker(rai.Compo):
+class HalfTestPattern(rai.Compo):
     def _make(
             self,
             num_rects: int,
@@ -20,10 +20,10 @@ class HalfAlignMarker(rai.Compo):
                 )
 
 
-class AlignMarker(rai.Compo):
+class TestPattern(rai.Compo):
     """
     This is another example component inspired by Leon's work with
-    alignment markers and test patterns.
+    test patterns for ebeam.
     """
 
     class Layers:
@@ -50,7 +50,7 @@ class AlignMarker(rai.Compo):
             gap_width: float = 10,
             abberation: float = 1.5
             ):
-        self.subcompos.left = HalfAlignMarker(
+        self.subcompos.left = HalfTestPattern(
             num_rects,
             rect_width,
             rect_length,
@@ -67,5 +67,5 @@ class AlignMarker(rai.Compo):
             )
 
 if __name__ == '__main__':
-    rai.show(AlignMarker())
+    rai.show(TestPattern())
 
