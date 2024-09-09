@@ -22,6 +22,8 @@ class HalfTestPattern(rai.Compo):
 
 class TestPattern(rai.Compo):
     """
+    Test Pattern
+
     This is another example component inspired by Leon's work with
     test patterns for ebeam.
     """
