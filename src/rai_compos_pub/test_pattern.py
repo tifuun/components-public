@@ -52,12 +52,14 @@ class TestPattern(rai.Compo):
             gap_width: float = 10,
             abberation: float = 1.5
             ):
+
         self.subcompos.left = HalfTestPattern(
             num_rects,
             rect_width,
             rect_length,
             gap_width
-            ).proxy()
+            ).proxy().map('left')
+
         self.subcompos.right = (
             self.subcompos.left
             .proxy()
@@ -65,6 +67,7 @@ class TestPattern(rai.Compo):
             .snap_right(
                 self.subcompos.left
                 )
+            .map('right')
             )
 
 class TestPatterns(rai.Compo):
