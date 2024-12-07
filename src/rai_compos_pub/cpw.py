@@ -3,10 +3,10 @@ from math import radians
 import raimad as rai
 
 class CPWLayers:
-    conductor = rai.Layer('Conducting layer for signal and ground lines')
     resist = rai.Layer('Resist layer above signal line')
     insl = rai.Layer('Insulator between CPW and bridge')
     bridge = rai.Layer('Conducting part of bridge')
+    conductor = rai.Layer('Conducting layer for signal and ground lines')
 
 class CPWSegment(rai.Compo):
     class Layers(CPWLayers):
